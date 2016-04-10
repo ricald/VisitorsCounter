@@ -1,0 +1,136 @@
+﻿<Window x:Class="VisitorsCounter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisitorsCounter"
+        mc:Ignorable="d"
+        Title="{Binding ApplicationName, Mode=OneWay, Source={StaticResource Resources}}" Height="400" Width="800" Closed="Window_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.0*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textTitle10" Text="{Binding Title10, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="0" TextAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="textCount10" Grid.Row="1" TextAlignment="Center" FontSize="26.667" Text="0"/>
+            <Button x:Name="buttonUp10" Content="▲" Grid.Row="2" Margin="5" Click="ButtonCountUp_Click"/>
+            <Button x:Name="buttonDown10" Content="▼" Grid.Row="3" Margin="5" Click="ButtonCountDown_Click"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textTitle20" Text="{Binding Title20, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="0" TextAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="textCount20" Grid.Row="1" TextAlignment="Center" FontSize="26.667" Text="0"/>
+            <Button x:Name="buttonUp20" Content="▲" Grid.Row="2" Margin="5" Click="ButtonCountUp_Click"/>
+            <Button x:Name="buttonDown20" Content="▼" Grid.Row="3" Margin="5" Click="ButtonCountDown_Click"/>
+        </Grid>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textTitle30" Text="{Binding Title30, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="0" TextAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="textCount30" Grid.Row="1" TextAlignment="Center" FontSize="26.667" Text="0"/>
+            <Button x:Name="buttonUp30" Content="▲" Grid.Row="2" Margin="5" Click="ButtonCountUp_Click"/>
+            <Button x:Name="buttonDown30" Content="▼" Grid.Row="3" Margin="5" Click="ButtonCountDown_Click"/>
+        </Grid>
+        <Grid Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textTitle40" Text="{Binding Title40, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="0" TextAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="textCount40" Grid.Row="1" TextAlignment="Center" FontSize="26.667" Text="0"/>
+            <Button x:Name="buttonUp40" Content="▲" Grid.Row="2" Margin="5" Click="ButtonCountUp_Click"/>
+            <Button x:Name="buttonDown40" Content="▼" Grid.Row="3" Margin="5" Click="ButtonCountDown_Click"/>
+        </Grid>
+        <Grid Grid.Column="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textTitle50" Text="{Binding Title50, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="0" TextAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="textCount50" Grid.Row="1" TextAlignment="Center" FontSize="26.667" Text="0"/>
+            <Button x:Name="buttonUp50" Content="▲" Grid.Row="2" Margin="5" Click="ButtonCountUp_Click"/>
+            <Button x:Name="buttonDown50" Content="▼" Grid.Row="3" Margin="5" Click="ButtonCountDown_Click"/>
+        </Grid>
+        <Grid Grid.Column="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textTitle60" Text="{Binding Title60, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="0" TextAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="textCount60" Grid.Row="1" TextAlignment="Center" FontSize="26.667" Text="0"/>
+            <Button x:Name="buttonUp60" Content="▲" Grid.Row="2" Margin="5" Click="ButtonCountUp_Click"/>
+            <Button x:Name="buttonDown60" Content="▼" Grid.Row="3" Margin="5" Click="ButtonCountDown_Click"/>
+        </Grid>
+        <Grid Grid.Column="6">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textTitle70" Text="{Binding Title70, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="0" TextAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="textCount70" Grid.Row="1" TextAlignment="Center" FontSize="26.667" Text="0"/>
+            <Button x:Name="buttonUp70" Content="▲" Grid.Row="2" Margin="5" Click="ButtonCountUp_Click"/>
+            <Button x:Name="buttonDown70" Content="▼" Grid.Row="3" Margin="5" Click="ButtonCountDown_Click"/>
+        </Grid>
+        <Grid Grid.Column="7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textTitle80" Text="{Binding Title80, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="0" TextAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="textCount80" Grid.Row="1" TextAlignment="Center" FontSize="26.667" Text="0"/>
+            <Button x:Name="buttonUp80" Content="▲" Grid.Row="2" Margin="5" Click="ButtonCountUp_Click"/>
+            <Button x:Name="buttonDown80" Content="▼" Grid.Row="3" Margin="5" Click="ButtonCountDown_Click"/>
+        </Grid>
+        <Grid Grid.Column="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textTitle90" Text="{Binding Title90, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="0" TextAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="textCount90" Grid.Row="1" TextAlignment="Center" FontSize="26.667" Text="0"/>
+            <Button x:Name="buttonUp90" Content="▲" Grid.Row="2" Margin="5" Click="ButtonCountUp_Click"/>
+            <Button x:Name="buttonDown90" Content="▼" Grid.Row="3" Margin="5" Click="ButtonCountDown_Click"/>
+        </Grid>
+        <Button x:Name="buttonReset" Content="{Binding ButtonResetText, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Click="ButtonReset_Click"/>
+        <Button x:Name="buttonClose" Content="{Binding ButtonCloseText, Mode=OneWay, Source={StaticResource Resources}}" Grid.Row="1" Grid.Column="7" Grid.ColumnSpan="2" Margin="5" Click="ButtonClose_Click"/>
+    </Grid>
+</Window>

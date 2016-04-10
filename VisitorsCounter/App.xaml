@@ -1,0 +1,10 @@
+﻿<Application x:Class="VisitorsCounter.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:properties="clr-namespace:VisitorsCounter.Properties"
+             xmlns:local="clr-namespace:VisitorsCounter"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <properties:Resources x:Key="Resources" />
+    </Application.Resources>
+</Application>
